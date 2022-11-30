@@ -53,7 +53,7 @@ namespace JWTAuthenticationApi.Controllers
             var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
             return Ok(new { Token = tokenString });
         }
-
+        //git
 
         [HttpPost("loginCookie")]
         public async Task<IActionResult> LoginCookie([FromBody] User user)
